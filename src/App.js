@@ -1,20 +1,16 @@
 import React from 'react';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from 'react-bootstrap/Navbar'
-import { Container } from 'react-bootstrap';
-import { Card } from 'react-bootstrap';
-import { Button } from 'react-bootstrap';
-import { Row } from 'react-bootstrap'
-import { Col } from 'react-bootstrap';
+import { Navbar, Container, Card, Button, Row, Col } from 'react-bootstrap';
 import light_logo from './images/logo_light_theme_2.png'
+import './App.css';
+import Maps from './index_content/Maps'
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <Navbar_generator />
       <Title_description />
-      <Maps />
+      <Maps_generator />
     </div>
   );
 }
@@ -47,58 +43,20 @@ function Title_description() {
       <h1 id='title' class="text-center">
         Imap
       </h1>
-      <container>
+      <Container>
         <p id='leyend' class="text-center">
           "Una guía para todo aquel valiente que quiera empezar a
           ser autodidacta en este enorme océano llamado Internet."
         </p>
-      </container>
+      </Container>
     </div>
   )
 }
 
-class Maps extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleButton = this.handleButton(this);
-  }
-  handleButton() {
-    console.log('You cliked submit');
-  }
-  render() {
-    return (
-      <Container>
-        <Row className="justify-content-md-center">
-          <Col>
-            <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
-                </Card.Text>
-                <Button variant="primary">Ver mapa</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
-                </Card.Text>
-                <Button variant="primary">Ver mapa</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
-    )
-  }
+function Maps_generator() {
+  return (
+    <Maps />
+  )
 }
 
 export default App;
