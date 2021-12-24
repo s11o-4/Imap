@@ -1,16 +1,28 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Container, Card, Button, Row, Col } from 'react-bootstrap';
-import light_logo from './images/logo_light_theme_2.png'
 import './App.css';
-import Maps from './index_content/Maps'
+
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+import light_logo from './images/logo_light_theme_2.png'
+
+import ciencia_logo from './images/ciencia.png'
+import tecno_logo from './images/tecnología.png'
+import inge_logo from './images/ingenieria.png'
+import art_logo from './images/arte.png'
+import mate_logo from './images/mate.png'
 
 function App() {
   return (
     <div className='App'>
       <Navbar_generator />
       <Title_description />
-      <Maps_generator />
+      <Maps />
     </div>
   );
 }
@@ -22,7 +34,7 @@ function Navbar_generator() {
         <Container>
           <Navbar.Brand href="#home">
             <img
-              alt=""
+              alt="Logo"
               src={light_logo}
               width="90"
               height="55"
@@ -53,10 +65,89 @@ function Title_description() {
   )
 }
 
-function Maps_generator() {
+function Map(props) {
   return (
-    <Maps />
+    <Card style={{ width: '18rem' }}>
+      <Card.Img
+        variant="top" src={props.img_scr} />
+      <Card.Body>
+        <Card.Title>{props.title}</Card.Title>
+        <Card.Text>
+          {props.desc}
+        </Card.Text>
+        <Button
+          variant="primary" onClick={props.handleClick}>
+          Ver mapa
+        </Button>
+      </Card.Body>
+    </Card>
   )
+}
+
+class Maps extends React.Component{
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+
+  }
+
+  render() {
+    return (
+      <div class="cards">
+        <Container>
+          <Row>
+            <Col>
+              <Map
+                img_scr={ciencia_logo}
+                title="Ciencia"
+                desc="Aprende ciencia"
+                var_handleClick={this.handleClick}
+              />
+            </Col>
+            <Col>
+              <Map
+                img_scr={tecno_logo}
+                title="Tecnología"
+                desc="Aprende tecnología"
+                var_handleClick={this.handleClick}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Map
+                img_scr={inge_logo}
+                title="Ingeniería"
+                desc="Aprende ingeniería"
+                var_handleClick={this.handleClick}
+              />
+            </Col>
+            <Col>
+              <Map
+                img_scr={art_logo}
+                title="Arte"
+                desc="Aprende arte"
+                var_handleClick={this.handleClick}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Map
+                img_scr={mate_logo}
+                title="Mate"
+                desc="Aprende mate"
+                var_handleClick={this.handleClick}
+              />
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    )
+  }
 }
 
 export default App;
