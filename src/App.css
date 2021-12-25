@@ -1,3 +1,7 @@
+.App{
+  background-color: #F2F3F4;
+}
+
 #title_navbar{
   padding-left: 32vw;
   font-family: 'Fuzzy Bubbles', cursive;
@@ -6,35 +10,62 @@
 }
 
 #title{
-  margin-top: 51px;
-  font-size: 60px;
+  margin-top: 7vh;
+  font-size: 6rem;
   font-family: 'Fuzzy Bubbles', cursive;
 }
 
-#leyend{
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+#title_map{
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 2rem;
 }
 
+#leyend{
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1vw;
+}
+
+#button_ver_mapa{
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+}
 
 /* Media queries */
 @media screen 
   and (max-width: 774px)
   {
-
+    .map_img{
+      height: 300px;
+    }
 } 
 @media screen
  and (min-width: 775px)
  and (max-width: 991px)
  {
-
+   .cards{
+     padding-top: 3vh;
+     padding-left: 10vw;
+   }
+   .map_img{
+    padding-right: 3vw;
+    padding-left: 3vw;
+    width: 470px;
+    height: 350px;
+  }
 }
 
 @media screen
  and (min-width: 992px)
  {
-  .cards{
-    padding-top: 6vh;
-    padding-left: 20vw;
-  }
+   .cards{
+     padding-top: 5vh;
+     margin-left: 19vw;
+     margin-right: 19vw;
+   }
+   .map_img{
+     padding-right: 3vw;
+     padding-left: 3vw;
+     width: 470px;
+     height: 350px;
+   }
  }

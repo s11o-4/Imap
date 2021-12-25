@@ -67,16 +67,19 @@ function Title_description() {
 
 function Map(props) {
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card border="dark">
       <Card.Img
-        variant="top" src={props.img_scr} />
+        class="map_img"
+        variant="top"
+        src={props.img_scr}
+      />
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text>
-          {props.desc}
-        </Card.Text>
-        <Button
-          variant="primary" onClick={props.handleClick}>
+        <Card.Title id='title_map'>
+          {props.title}
+        </Card.Title>
+        <Button id='button_ver_mapa'
+          variant="danger"
+          onClick={props.handleClick}>
           Ver mapa
         </Button>
       </Card.Body>
@@ -84,7 +87,7 @@ function Map(props) {
   )
 }
 
-class Maps extends React.Component{
+class Maps extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
@@ -98,48 +101,43 @@ class Maps extends React.Component{
     return (
       <div class="cards">
         <Container>
-          <Row>
-            <Col>
+          <Row xs={1} md={2}>
+            <Col style={{ paddingBottom: '5vh' }}>
               <Map
                 img_scr={ciencia_logo}
                 title="Ciencia"
-                desc="Aprende ciencia"
                 var_handleClick={this.handleClick}
               />
             </Col>
-            <Col>
+            <Col style={{ paddingBottom: '5vh' }}>
               <Map
                 img_scr={tecno_logo}
                 title="Tecnología"
-                desc="Aprende tecnología"
                 var_handleClick={this.handleClick}
               />
             </Col>
           </Row>
-          <Row>
-            <Col>
+          <Row xs={1} md={2}>
+            <Col style={{ paddingBottom: '5vh' }}>
               <Map
                 img_scr={inge_logo}
                 title="Ingeniería"
-                desc="Aprende ingeniería"
                 var_handleClick={this.handleClick}
               />
             </Col>
-            <Col>
+            <Col style={{ paddingBottom: '5vh' }}>
               <Map
                 img_scr={art_logo}
                 title="Arte"
-                desc="Aprende arte"
                 var_handleClick={this.handleClick}
               />
             </Col>
           </Row>
-          <Row>
-            <Col>
+          <Row xs={1} md={2}>
+            <Col style={{ paddingBottom: '5vh' }}>
               <Map
                 img_scr={mate_logo}
                 title="Mate"
-                desc="Aprende mate"
                 var_handleClick={this.handleClick}
               />
             </Col>
