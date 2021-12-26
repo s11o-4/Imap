@@ -3,7 +3,7 @@
 }
 
 #title_navbar{
-  padding-left: 32vw;
+  padding-left: 29vw;
   font-family: 'Fuzzy Bubbles', cursive;
   font-size: 35px;
   padding-top: 1vw;
@@ -40,7 +40,7 @@
 } 
 @media screen
  and (min-width: 770px)
- and (max-width: 1400px)
+ and (max-width: 1644px)
  {
    .cards{
     padding-top: 5vh;
@@ -52,30 +52,17 @@
   }
 }
 @media screen
- and (min-width: 1405px)
- and (max-width: 22000px)
- {
+ and (min-width: 1645px)
+ {  
    .cards{
      padding-top: 5vh;
-     margin-left: 25vw;
-     margin-right: 25vw;
+     margin-left: 20vw;
+     margin-right: 20vw;
    }
    .map_img{
      padding-right: 3vw;
      padding-left: 3vw;
      width: 470px;
      height: 350px;
-   }
- }
-
- @media screen
- and (min-width: 22000px)
- {
-   .cards{
-
-   }
-   .map_img{
-     padding-left: 3vw;
-     padding-right: 3vw;
    }
  }
