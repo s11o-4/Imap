@@ -137,7 +137,7 @@ class Maps extends React.Component {
             <Col style={{ paddingBottom: '5vh' }}>
               <Map
                 img_scr={mate_logo}
-                title="Mate"
+                title="Matemáticas"
                 var_handleClick={this.handleClick}
               />
             </Col>

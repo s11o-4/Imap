@@ -34,6 +34,9 @@
 @media screen 
   and (max-width: 774px)
   {
+    .cards{
+      padding-top: 5vh;
+     }
     .map_img{
       height: 300px;
     }
