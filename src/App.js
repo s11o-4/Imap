@@ -22,17 +22,17 @@ function App() {
     <div className='App'>
       <Navbar_generator />
       <Title_description />
-      <Maps />
+      <MapsClass />
     </div>
   );
 }
 
 function Navbar_generator() {
   return (
-    <div className='Navbar'>
-      <Navbar bg="light" expand="sm" sticky="top">
+    <div id='navbar'>
+      <Navbar bg="light" expand="sm" fixed="top">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/home">
             <img
               alt="Logo"
               src={light_logo}
@@ -87,14 +87,13 @@ function Map(props) {
   )
 }
 
-class Maps extends React.Component {
+class MapsClass extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
-
   }
 
   render() {

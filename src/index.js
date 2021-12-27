@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Ciencia from './maps/Ciencia'
 import App from './App';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+        <Route path="/home" element={<App />}/>
+        <Route path="ciencia" element={<Ciencia />} />
+    </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
