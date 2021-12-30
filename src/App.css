@@ -38,6 +38,9 @@
 @media screen 
   and (max-width: 774px)
   {
+    #leyend{
+      font-size: 4vw;
+    }  
     .cards{
       padding-top: 5vh;
      }
@@ -49,6 +52,9 @@
  and (min-width: 770px)
  and (max-width: 1644px)
  {
+    #leyend{
+      font-size: 2vw;
+    }  
    .cards{
     padding-top: 5vh;
     margin-left: 16vw;
