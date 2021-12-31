@@ -1,6 +1,5 @@
 //Scripts and internal dependencies
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Ciencia from './maps/Ciencia'
 import Error from './ErrorPage'
@@ -10,11 +9,11 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  useNavigate,
-  Navigate
+  useNavigate
 } from "react-router-dom";
 
 //React-boostrap
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card'
@@ -25,20 +24,20 @@ import Col from 'react-bootstrap/Col';
 //Images
 import light_logo from './images/logo_light_theme_2.png'
 import ciencia_logo from './images/ciencia.png'
-import tecno_logo from './images/tecnología.png'
-import inge_logo from './images/ingenieria.png'
+import inge_tecno_logo from './images/ingenieria.png'
 import art_logo from './images/arte.png'
 import mate_logo from './images/mate.png'
+import finanzas from './images/finanzas.png'
 
 function App() {
   return (
     <div className='App'>
       <Router>
-        <Navbar_generator />
         <Routes>
           <Route path="/"
             element={
               <div>
+                <Navbar_generator />
                 <Title_description />
                 <MapsClass />
               </div>
@@ -142,18 +141,18 @@ class MapsClass extends React.Component {
             </Col>
             <Col style={{ paddingBottom: '5vh' }}>
               <Map
-                img_scr={tecno_logo}
-                title="Tecnología"
-                id="/Tecnologia"
+                img_scr={inge_tecno_logo}
+                title="Ingeniería y Tecnología"
+                id="/IngTec"
               />
             </Col>
           </Row>
           <Row xs={1} md={2}>
             <Col style={{ paddingBottom: '5vh' }}>
               <Map
-                img_scr={inge_logo}
-                title="Ingeniería"
-                id="/Ingenieria"
+                img_scr={finanzas}
+                title="Finanzas"
+                id="/Finanzas"
               />
             </Col>
             <Col style={{ paddingBottom: '5vh' }}>
