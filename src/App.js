@@ -37,8 +37,8 @@ function App() {
           <Route path="/"
             element={
               <div>
-                <Navbar_generator />
-                <Title_description />
+                <NavbarGenerator />
+                <TitleDescription />
                 <MapsClass />
               </div>
             }
@@ -46,7 +46,7 @@ function App() {
           <Route path="/Ciencia"
             element={
               <div>
-                <Navbar_generator />
+                <NavbarGenerator />
                 <Ciencia />
               </div>
             }
@@ -58,7 +58,7 @@ function App() {
   );
 }
 
-function Navbar_generator() {
+function NavbarGenerator() {
   return (
     <div id='navbar'>
       <Navbar bg="light" expand="sm" fixed="top">
@@ -80,7 +80,7 @@ function Navbar_generator() {
   )
 }
 
-function Title_description() {
+function TitleDescription() {
   return (
     <div>
       <h1 id='title' class="text-center">
@@ -115,7 +115,9 @@ function Map(props) {
           onClick={() => {
             navigate(props.id)
           }}>
-          Ver mapa
+          <span class="content_title">
+            Ver mapa
+          </span>
         </Button>
       </Card.Body>
     </Card>

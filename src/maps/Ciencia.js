@@ -5,8 +5,9 @@ import './Maps.css'
 //React-bootstrap
 import Table from 'react-bootstrap/Table'
 import Container from 'react-bootstrap/Container'
-import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Card'
+import Tabs from 'react-bootstrap/Tabs'
+import Tab from 'react-bootstrap/Tab'
+import ListGroup from 'react-bootstrap/ListGroup'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Ciencia() {
@@ -14,6 +15,7 @@ function Ciencia() {
         <div className='Ciencia'>
             <Title />
             <ContentTable />
+            <ContentTabbed />
         </div>
     )
 }
@@ -29,19 +31,29 @@ function Title() {
 }
 
 function ContentTable() {
+    const thStyle = {
+        paddingLeft: '6vw',
+        paddingRight: '5vw'
+    }
     return (
         <div className='table'>
             <Container>
-                <Table responsive="sm" >
-                    <thead>
+                <Table responsive="sm" hover bordered>
+                    <thead class="table_title">
                         <tr>
                             <th>#</th>
-                            <th style={{ paddingLeft: '8vw', paddingRight: '5vw' }}>Canales</th>
-                            <th style={{ paddingLeft: '8vw', paddingRight: '5vw' }}>Comunidades</th>
-                            <th style={{ paddingLeft: '8vw', paddingRight: '5vw' }}>Plataformas</th>
+                            <th
+                                style={thStyle}
+                            >Canales</th>
+                            <th
+                                style={thStyle}>
+                                Comunidades</th>
+                            <th
+                                style={thStyle}>
+                                Plataformas</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="table_content">
                         <tr>
                             <td>1</td>
                             <td>Mark</td>
@@ -63,6 +75,38 @@ function ContentTable() {
                 </Table>
             </Container>
         </div>
+    )
+}
+
+function ContentTabbed() {
+    return (
+        <Container>
+            <Tabs
+                defaultActiveKey="profile" 
+                id="uncontrolled-tab-example"
+                className="mb-2"
+                class="tabbed_content_title"
+            >
+                <Tab eventKey="libros" title="Libros">
+                    <ListGroup>
+                        <ListGroup.Item>Cras justo odio</ListGroup.Item>
+                        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+                        <ListGroup.Item>Morbi leo risus</ListGroup.Item>
+                        <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
+                        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+                    </ListGroup>
+                </Tab>
+                <Tab eventKey="podcasts" title="Podcasts">
+                    <ListGroup>
+                        <ListGroup.Item>Cras justo odio</ListGroup.Item>
+                        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+                        <ListGroup.Item>Morbi leo risus</ListGroup.Item>
+                        <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
+                        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+                    </ListGroup>
+                </Tab>
+            </Tabs>
+        </Container>
     )
 }
 

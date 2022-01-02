@@ -12,8 +12,23 @@
 .table{
     padding-left: 1vw;
     padding-right: 1vw;
+    padding-bottom: 2vh;
 }
 
+.table_title{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2rem;
+}
+
+.tabbed_content_title{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+}
+
+.table_content{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: large;
+}
 
 /* Media queries */
 @media screen 

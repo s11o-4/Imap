@@ -29,9 +29,9 @@
   font-size: 1vw;
 }
 
-#button_ver_mapa{
-  font-family: 'Nunito', sans-serif;
-  font-size: 20px;
+.content_title{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
 }
 
 /* Media queries */
