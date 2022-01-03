@@ -8,7 +8,8 @@ import Container from 'react-bootstrap/Container'
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 import ListGroup from 'react-bootstrap/ListGroup'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function Ciencia() {
     return (
@@ -30,10 +31,44 @@ function Title() {
     )
 }
 
+function TableRowGenerator(props) {
+    return (
+        <tr>
+            <td>
+                {props.id}
+            </td>
+            <td>
+                <span class="table_content_title">
+                    {props.chanel_title + " ~ "}
+                </span>
+                {props.description}
+                <br />
+                <span class="btn_table">
+                    <Button
+                        variant="outline-dark"
+                        target='blank'
+                        href={props.link}
+                    >
+                        <span class="content_title">
+                            Ver canal
+                        </span>
+                    </Button>
+                </span>
+            </td>
+            <td>
+                {props.comunity}
+            </td>
+            <td>
+                {props.platforms}
+            </td>
+        </tr>
+    )
+}
+
 function ContentTable() {
     const thStyle = {
         paddingLeft: '6vw',
-        paddingRight: '5vw'
+        paddingRight: '6vw'
     }
     return (
         <div className='table'>
@@ -43,8 +78,8 @@ function ContentTable() {
                         <tr>
                             <th>#</th>
                             <th
-                                style={thStyle}
-                            >Canales</th>
+                                style={thStyle}>
+                                Canales</th>
                             <th
                                 style={thStyle}>
                                 Comunidades</th>
@@ -54,23 +89,12 @@ function ContentTable() {
                         </tr>
                     </thead>
                     <tbody class="table_content">
-                        <tr>
-                            <td>1</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td colSpan={2}>Larry the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
+                        <TableRowGenerator
+                            id='1'
+                            chanel_title='QuantumFracture'
+                            description='¡Ciencia! ¡y con animaciones! El lado más loco (y real) del Universo.'
+                            link='https://www.youtube.com/channel/UCbdSYaPD-lr1kW27UJuk8Pw'
+                        />
                     </tbody>
                 </Table>
             </Container>
@@ -78,33 +102,88 @@ function ContentTable() {
     )
 }
 
+function TabContentGenerator(props) {
+    return (
+        <p class="tabbed_content">
+            <ListGroup>
+                <ListGroup.Item>
+                    <p class="tabbed_background">
+                        <Container>
+                            <span>
+                                {props.content_arg}
+                            </span>
+                        </Container>
+                    </p>
+                </ListGroup.Item>
+            </ListGroup>
+        </p>
+    )
+}
+
 function ContentTabbed() {
     return (
         <Container>
             <Tabs
-                defaultActiveKey="profile" 
+                defaultActiveKey="profile"
                 id="uncontrolled-tab-example"
-                className="mb-2"
-                class="tabbed_content_title"
+                className="mb-3"
             >
-                <Tab eventKey="libros" title="Libros">
-                    <ListGroup>
-                        <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                        <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-                        <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-                        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-                    </ListGroup>
+                <Tab
+                    eventKey='faq'
+                    title=
+                    {
+                        <span class="tabbed_title">
+                            FAQ
+                        </span>
+                    }
+                >
+                    <TabContentGenerator
+                        content_arg='contenido'
+                    />
                 </Tab>
-                <Tab eventKey="podcasts" title="Podcasts">
-                    <ListGroup>
-                        <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                        <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-                        <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-                        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-                    </ListGroup>
+
+                <Tab
+                    eventKey="videos"
+                    title=
+                    {
+                        <span class="tabbed_title">
+                            Videos Top
+                        </span>
+                    }
+                >
+                    <TabContentGenerator
+                        content_arg='contenido'
+                    />
                 </Tab>
+                
+                <Tab
+                    eventKey="libros"
+                    title=
+                    {
+                        <span class="tabbed_title">
+                            Libros
+                        </span>
+                    }
+                >
+                    <TabContentGenerator
+                        content_arg='contenido'
+                    />
+                </Tab>
+                
+                <Tab
+                    eventKey="podcasts"
+                    title=
+                    {
+                        <span class="tabbed_title">
+                            Podcasts
+                        </span>
+                    }
+                >
+                    <TabContentGenerator
+                        content_arg='contenido'
+                    />
+                </Tab>
+            
             </Tabs>
         </Container>
     )

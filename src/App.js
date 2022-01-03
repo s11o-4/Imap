@@ -102,6 +102,7 @@ function Map(props) {
     <Card border="dark">
       <Card.Img
         class="map_img"
+        alt={props.title}
         variant="top"
         src={props.img_scr}
       />
@@ -110,8 +111,7 @@ function Map(props) {
           {props.title}
         </Card.Title>
         <Button
-          id='button_ver_mapa'
-          variant="danger"
+          variant="outline-dark"
           onClick={() => {
             navigate(props.id)
           }}>
@@ -179,5 +179,13 @@ class MapsClass extends React.Component {
     )
   }
 }
-
+/* --Proximamente...
+function Footer(){
+  return(
+    <div>
+    
+    </div>
+  )
+}
+*/
 export default App;

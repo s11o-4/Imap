@@ -1,4 +1,4 @@
-.Ciencia{
+.Science{
   background-color: #F2F3F4;
 }
 
@@ -20,14 +20,37 @@
   font-size: 2rem;
 }
 
-.tabbed_content_title{
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1rem;
-}
-
 .table_content{
   font-family: 'Ubuntu', sans-serif;
   font-size: large;
+}
+
+.table_content_title{
+  font-family: 'Roboto Mono', monospace;
+  }
+
+.tabbed_title{
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+  font-size: larger;
+}
+
+.tabbed_content{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: larger;
+  
+  background-color: #F2F3F4;
+}
+
+.tabbed_background{
+  background-color: #F2F3F4;
+  margin-top: 2vh;
+  padding-top: 5vh;
+  padding-bottom: 4vh;
+  border-style: solid;
+  border-width: 0.4vh;
+  border-radius: 12px;
+  border-color: #F2F3F4;
 }
 
 /* Media queries */
@@ -43,7 +66,7 @@
  and (min-width: 770px)
  and (max-width: 1644px)
  {
-
+    
 }
 @media screen
  and (min-width: 1645px)

@@ -29,6 +29,11 @@
   font-size: 1vw;
 }
 
+.btn_table{
+  padding-left: 7vw;
+  padding-right: 7vw;
+}
+
 .content_title{
   font-family: 'Roboto Mono', monospace;
   font-size: 1rem;
