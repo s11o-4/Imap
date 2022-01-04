@@ -1,7 +1,7 @@
 //Scripts and internal dependencies
 import React from 'react';
 import './App.css';
-import Ciencia from './maps/Ciencia'
+import Ciencia from './maps/Science/Ciencia'
 import Error from './ErrorPage'
 
 //React-router-dom 
