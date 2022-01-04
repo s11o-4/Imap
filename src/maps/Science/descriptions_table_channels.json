@@ -1,0 +1,124 @@
+{
+    "descriptions_table_channels": [
+        {
+            "id": 1,
+            "chanel_title": "Veritasium en español",
+            "description": "Un elemento de la verdad. \n Videos de Ciencia y Tecnología doblados al español",
+            "link": "https://www.youtube.com/c/Veritasiumenespa%C3%B1ol/featured"
+        },
+        {
+            "id": 2,
+            "chanel_title": "En Pocas Palabras ~ Kurzgesagt",
+            "description": "Vídeos que explican las cosas con nihilismo optimista. Somos un equipo pequeño que quiere que la ciencia se vea hermosa. Porque es hermosa.",
+            "link": "https://www.youtube.com/c/kurzgesagtES"
+        },
+        {
+            "id": 3,
+            "chanel_title": "QuantumFracture",
+            "description": "¡Ciencia! ¡y con animaciones! El lado más loco (y real)' del Universo.",
+            "link": "https://www.youtube.com/channel/UCbdSYaPD-lr1kW27UJuk8Pw"
+        },
+        {
+            "id": 4,
+            "chanel_title": "CdeCiencia",
+            "description": "En CdeCiencia encontrarás vídeos tratando los temas más fascinantes de nuestro universo, y semanalmente un vídeo-resumen con las 8 noticias científicas más destacadas de la última semana.",
+            "link": "https://www.youtube.com/c/CdeCiencia/featured"
+        },
+        {
+            "id": 5,
+            "chanel_title": "El Robot de Platón ",
+            "description": "Preguntarte nunca dejar debes. Si el conocimiento es lo tuyo, date una vuelta. A veces hay helado. Canal de Ciencia, canal de Ciencias, canal de Sapiencias. La misión de esta página es difundir el conocimiento. El Robot representa la tecnología, presente y futuro, Platón representa el pasado y la filosofía, cosmología y en general la epistemología.",
+            "link": "https://www.youtube.com/c/ElRobotdePlaton/featured"
+        },
+        {
+            "id": 6,
+            "chanel_title": "Date Un Vlog",
+            "description": "Encontrarás videos tratando sobre temas muy variados de ciencia. Todos contados de una forma muy enérgica e interesante. Entra y entederás mejor tu universo",
+            "link": "https://www.youtube.com/c/DateunVlog/featured"
+        },
+        {
+            "id": 7,
+            "chanel_title": "CuriosaMente",
+            "description": "Ciencia y cultura, por el placer de aprender. Una invitación para las mentes curiosas a despertar el sentido de la maravilla que sólo el conocimiento puede dar.",
+            "link": "https://www.youtube.com/curiosamente"
+        },
+        {
+            "id": 8,
+            "chanel_title": "Antroporama",
+            "description": "Esto es Antroporama, es decir, divulgación científica sobre el Ser Humano, nuestra conducta, mente y nuestro secreto mejor guardado: el cerebro. ¡Quédate si te encanta conocer lo curiosa que puede ser nuestra especie!",
+            "link": "https://www.youtube.com/channel/UCGKzjVZGdJ0YmUqg42xfO5w"
+        },
+        {
+            "id": 9,
+            "chanel_title": "CienciaDeSofa",
+            "description": "Divulgación científica para mentes distraídas, ¡ahora también en vídeo! ",
+            "link": "https://www.youtube.com/user/CienciaDeSofa/featured"
+        },
+        {
+            "id": 10,
+            "chanel_title": "La Hiperactina",
+            "description": "¡Divulgación, biomedicina y muchas cosas bonitas!",
+            "link": "https://www.youtube.com/c/Lahiperactina/featured"
+        },
+        {
+            "id": 11,
+            "chanel_title": "GlóbuloAzul",
+            "description": "Por fin información de salud de la que te puedes fiar. Aquí es más importante el rigor que el número de suscriptores. ",
+            "link": "https://www.youtube.com/c/Gl%C3%B3buloAzul/featured"
+        },
+        {
+            "id": 12,
+            "chanel_title": "TeHasPreguntado",
+            "description": "NeuroCiencia y hechos sorprendentes que seguro te has preguntado alguna vez. En este canal te explicamos de manera sencilla y divertida como funciona nuestro cerebro, el comportamiento, cuestiones filosóficas y ciencia en general, que aunque no lo creas son parte de tu vida diaria.",
+            "link": "https://www.youtube.com/c/tehaspreguntado/featured"
+        },
+        {
+            "id": 13,
+            "chanel_title": "Date un Voltio",
+            "description": "Si tienes una mente curiosa, eres un friki de The Big Bang Theory o quieres aprender Física y resolver tus dudas sobre esta materia, ¡este es tu canal! ",
+            "link": "https://www.youtube.com/c/DateunVoltio"
+        },
+        {
+            "id": 14,
+            "chanel_title": "Instituto de Física Teórica IFT",
+            "description": "Es nuestra misión acelerar el aprendizaje de estudiantes de todas las edades. Con esto en mente, queremos compartir nuestro contenido con todos aquellos que lo puedan encontrar útil. ",
+            "link": "https://www.youtube.com/c/IFTMadrid/featured"
+        },
+        {
+            "id": 15,
+            "chanel_title": "KhanAcademyEspañol",
+            "description": "¡Explicamos nuestros campos de investigación de forma amena y accesible!'",
+            "link": "https://www.youtube.com/c/KhanAcademyEspanol/featured"
+        },
+        {
+            "id": 16,
+            "chanel_title": "Amigos de la Química",
+            "description": "Un canal de quimica, todo explicado de una forma muy clara, divertida y concisa",
+            "link": "https://www.youtube.com/c/AmigosdelaQu%C3%ADmicaMartaVitores/featured"
+        },
+        {
+            "id": 17,
+            "chanel_title": "Sabine Hossenfelder",
+            "description": "In her channel Science without the gobbledygook, Sabine talks straight about science: No hype, no spin, no tip-toeing around inconvenient truths. New video each Saturday. ",
+            "link": "https://www.youtube.com/c/SabineHossenfelder/featured"
+        },
+        {
+            "id": 18,
+            "chanel_title": "Veritasium",
+            "description": "An element of truth - videos about science, education, and anything else I find interesting. ",
+            "link": "https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA"
+        },
+        {
+            "id": 19,
+            "chanel_title": "minutephysics",
+            "description": "Simply put: cool physics and other sweet science. ",
+            "link": "https://www.youtube.com/c/minutephysics/featured"
+        },
+        {
+            "id": 20,
+            "chanel_title": "DoS - Domain of Science",
+            "description": "Welcome to the Domain of Science. A full channel of a lot of things about science and technology ",
+            "link": "https://www.youtube.com/c/DomainofScience/featured"
+        }
+    ]
+}
