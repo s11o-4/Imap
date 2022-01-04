@@ -1,5 +1,5 @@
 {
-    "descriptions_table_channels": [
+    "info_channels": [
         {
             "id": 1,
             "chanel_title": "Veritasium en español",
@@ -119,6 +119,18 @@
             "chanel_title": "DoS - Domain of Science",
             "description": "Welcome to the Domain of Science. A full channel of a lot of things about science and technology ",
             "link": "https://www.youtube.com/c/DomainofScience/featured"
+        }
+    ],
+    "info_communities": [
+        {
+            "comunity_title": "Reddit Science",
+            "description_community": "This community is a place to share and discuss new scientific research. Read about the latest advances in astronomy, biology, medicine, physics, social science, and more. Find and submit new publications and popular science coverage of current research.",
+            "link_community": "https://www.reddit.com/r/science/"
+        }
+    ],
+    "info_platforms": [
+        {
+            
         }
     ]
 }

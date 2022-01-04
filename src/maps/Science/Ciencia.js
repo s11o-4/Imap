@@ -1,7 +1,7 @@
 //Internal dependencies
 import React from 'react';
 import '../Maps.css'
-import descriptions_table_channels from './descriptions_table_channels.json'
+import info_table from './info_table.json'
 
 //React-bootstrap
 import Table from 'react-bootstrap/Table'
@@ -32,7 +32,7 @@ function Title() {
     )
 }
 
-function TableRowGenerator(props) {
+function TableRowColumnGeneratorChannels(props) {
     return (
         <tr>
             <td>
@@ -51,25 +51,19 @@ function TableRowGenerator(props) {
                         href={props.link}
                     >
                         <span class="content_title">
-                            Ver canal
+                            Navegar canal
                         </span>
                     </Button>
                 </span>
-            </td>
-            <td>
-                {props.comunity}
-            </td>
-            <td>
-                {props.platforms}
             </td>
         </tr>
     )
 }
 
 const Table_channel_content =
-    descriptions_table_channels.descriptions_table_channels.map(
+    info_table.info_channels.map(
         (json) =>
-            <TableRowGenerator
+            <TableRowColumnGeneratorChannels
                 id={json.id}
                 chanel_title={json.chanel_title}
                 description={json.description}
@@ -77,6 +71,61 @@ const Table_channel_content =
             />
     )
 
+function TableColumnGeneratorCommunities(props) {
+    return (
+        <td>
+            <span class="table_content_title">
+                {props.community_title + " - "}
+            </span>
+            {props.description_community}
+            <br />
+            <span class="btn_table">
+                <Button
+                    variant="outline-dark"
+                    target='blank'
+                    href={props.link_community}
+                >
+                    <span class="content_title">
+                        Navegar comunidad
+                    </span>
+                </Button>
+            </span>
+        </td>
+    )
+}
+
+const Table_community_content =
+    info_table.info_communities.map(
+        (json) =>
+            <TableColumnGeneratorCommunities
+                community_title={json.comunity_title}
+                description_community={json.description_community}
+                link_community={json.link_community}
+            />
+    )
+
+function TableColumnGeneratorPlatforms(props) {
+    return (
+        <td>
+            <span class="table_content_title">
+                {props.community_title + " - "}
+            </span>
+            {props.description_community}
+            <br />
+            <span class="btn_table">
+                <Button
+                    variant="outline-dark"
+                    target='blank'
+                    href={props.link_community}
+                >
+                    <span class="content_title">
+                        Navegar comunidad
+                    </span>
+                </Button>
+            </span>
+        </td>
+    )
+}
 
 function ContentTable() {
     const thStyle = {
@@ -137,7 +186,7 @@ function ContentTabbed() {
                 id="uncontrolled-tab-example"
                 className="mb-3"
             >
-            
+
                 <Tab
                     eventKey='faq'
                     title=
