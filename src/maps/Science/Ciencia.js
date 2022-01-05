@@ -32,39 +32,34 @@ function Title() {
     )
 }
 
-function TableRowColumnGeneratorChannels(props) {
+function TableColumnGeneratorChannels(props) {
     return (
-        <tr>
-            <td>
-                {props.id}
-            </td>
-            <td>
-                <span class="table_content_title">
-                    {props.chanel_title + " - "}
-                </span>
-                {props.description}
-                <br />
-                <span class="btn_table">
-                    <Button
-                        variant="outline-dark"
-                        target='blank'
-                        href={props.link}
-                    >
-                        <span class="content_title">
-                            Navegar canal
-                        </span>
-                    </Button>
-                </span>
-            </td>
-        </tr>
+        <td>
+            <span class="table_content_title">
+                {props.chanel_title + " - "}
+            </span>
+
+            {props.description}
+            <br />
+            <span class="btn_table">
+                <Button
+                    variant="outline-dark"
+                    target='blank'
+                    href={props.link}
+                >
+                    <span class="content_title">
+                        Navegar
+                    </span>
+                </Button>
+            </span>
+        </td>
     )
 }
 
 const Table_channel_content =
     info_table.info_channels.map(
         (json) =>
-            <TableRowColumnGeneratorChannels
-                id={json.id}
+            <TableColumnGeneratorChannels
                 chanel_title={json.chanel_title}
                 description={json.description}
                 link={json.link}
@@ -77,16 +72,16 @@ function TableColumnGeneratorCommunities(props) {
             <span class="table_content_title">
                 {props.community_title + " - "}
             </span>
-            {props.description_community}
+            {props.description}
             <br />
             <span class="btn_table">
                 <Button
                     variant="outline-dark"
                     target='blank'
-                    href={props.link_community}
+                    href={props.link}
                 >
                     <span class="content_title">
-                        Navegar comunidad
+                        Navegar
                     </span>
                 </Button>
             </span>
@@ -99,8 +94,8 @@ const Table_community_content =
         (json) =>
             <TableColumnGeneratorCommunities
                 community_title={json.comunity_title}
-                description_community={json.description_community}
-                link_community={json.link_community}
+                description={json.description}
+                link={json.link}
             />
     )
 
@@ -108,18 +103,18 @@ function TableColumnGeneratorPlatforms(props) {
     return (
         <td>
             <span class="table_content_title">
-                {props.community_title + " - "}
+                {props.platform_title + " - "}
             </span>
-            {props.description_community}
+            {props.description}
             <br />
             <span class="btn_table">
                 <Button
                     variant="outline-dark"
                     target='blank'
-                    href={props.link_community}
+                    href={props.link}
                 >
                     <span class="content_title">
-                        Navegar comunidad
+                        Navegar
                     </span>
                 </Button>
             </span>
@@ -127,31 +122,98 @@ function TableColumnGeneratorPlatforms(props) {
     )
 }
 
+const Table_platform_content =
+    info_table.info_platforms.map(
+        (json) =>
+            <TableColumnGeneratorPlatforms
+                platform_title={json.platform_title}
+                description={json.description}
+                link={json.link}
+            />
+    )
+
+
+let Table_channel_content_length = Object.keys(Table_channel_content)
+Table_channel_content_length = Table_channel_content_length.length
+
+let Table_community_content_length = Object.keys(Table_community_content)
+Table_community_content_length = Table_community_content_length.length
+
+let Table_platform_content_length = Object.keys(Table_platform_content)
+Table_platform_content_length = Table_platform_content_length.length
+
+const largest_content_table = Math.max
+    (
+        Table_channel_content_length,
+        Table_community_content_length,
+        Table_platform_content_length
+    );
+
+function TableRowGenerator() {
+    let final_content_table = [];
+
+    for (let i = 1; i <= largest_content_table; i++) {
+        final_content_table.push(
+            <tr>
+                <td>
+                    {i}
+                </td>
+                {Table_channel_content[i - 1]}
+                {Table_community_content[i - 1]}
+                {Table_platform_content[i - 1]}
+            </tr>
+        )
+    }
+
+    return (
+        final_content_table
+    )
+}
+
 function ContentTable() {
     const thStyle = {
-        paddingLeft: '6vw',
-        paddingRight: '6vw'
+        paddingLeft: '3vw',
+        paddingRight: '3vw',
     }
     return (
-        <div className='table'>
+        <div class='table'>
             <Container>
                 <Table responsive="sm" hover bordered>
                     <thead class="table_title">
                         <tr>
-                            <th>#</th>
-                            <th
-                                style={thStyle}>
-                                Canales</th>
-                            <th
-                                style={thStyle}>
-                                Comunidades</th>
-                            <th
-                                style={thStyle}>
-                                Plataformas</th>
+                            <th>
+                                <p id="hashtag">
+                                    #
+                                </p>
+                            </th>
+                            <th style={thStyle}>
+                                <p id="single_title">
+                                    <Container>
+                                        Canales
+                                    </Container>
+                                </p>
+                            </th>
+
+                            <th style={thStyle}>
+                                <p id="single_double_title">
+                                    <Container>
+                                        Comunidades & Cuentas
+                                    </Container>
+                                </p>
+                            </th>
+                            <th style={thStyle}>
+                                <p>
+                                    <Container>
+                                        Plataformas & Sitios Web
+                                    </Container>
+                                </p>
+                            </th>
                         </tr>
                     </thead>
                     <tbody class="table_content">
-                        {Table_channel_content}
+
+                        <TableRowGenerator />
+
                     </tbody>
                 </Table>
             </Container>
@@ -197,7 +259,7 @@ function ContentTabbed() {
                     }
                 >
                     <TabContentGenerator
-                        content_arg='contenido'
+                        content_arg=''
                     />
                 </Tab>
 

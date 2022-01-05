@@ -20,14 +20,28 @@
   font-size: 2rem;
 }
 
+#hashtag{
+  padding-bottom: 2vh;
+}
+
+#single_title{
+  padding-left: 4vw;
+  padding-bottom: 2vh;
+}
+
+.table_content_title{
+  font-family: 'Roboto Mono', monospace;
+}
+
 .table_content{
   font-family: 'Ubuntu', sans-serif;
   font-size: large;
 }
 
-.table_content_title{
-  font-family: 'Roboto Mono', monospace;
-  }
+.btn_table{
+  padding-left: 7vw;
+  padding-right: 7vw;
+}
 
 .tabbed_title{
   font-family: 'Roboto Mono', monospace;
@@ -58,15 +72,42 @@
   and (max-width: 774px)
   {
     #sub_title{
-      padding-top: 11vh;
+      padding-top: 9vh;
       font-size: 3rem;
+    }
+
+    .table_title{
+      font-size: 1.5rem;
+    }
+
+    #single_double_title{
+      padding-bottom: 2vh;
+    }
+
+    #single_title{
+      padding-bottom: 4vh;
+    }
+
+    #hashtag{
+      padding-bottom: 4vh;
     }
 } 
 @media screen
  and (min-width: 770px)
  and (max-width: 1644px)
  {
-    
+   
+    #single_double_title{
+      padding-bottom: 2vh;
+    }
+
+    #single_title{
+      padding-bottom: 3vh;
+    }
+
+    #hashtag{
+      padding-bottom: 3vh;
+    }
 }
 @media screen
  and (min-width: 1645px)

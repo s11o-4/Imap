@@ -70,7 +70,7 @@ function NavbarGenerator() {
               width="90"
               height="55"
             />
-            <span class="text-start" id='title_navbar'>
+            <span className="text-start" id='title_navbar'>
               Imap
             </span>
           </Navbar.Brand>
@@ -83,11 +83,11 @@ function NavbarGenerator() {
 function TitleDescription() {
   return (
     <div>
-      <h1 id='title' class="text-center">
+      <h1 id='title' className="text-center">
         Imap
       </h1>
       <Container>
-        <p id='leyend' class="text-center">
+        <p id='leyend' className="text-center">
           "Un mapa para todo aquel valiente que quiera empezar a
           ser autodidacta en este enorme océano llamado Internet."
         </p>
