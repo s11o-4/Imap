@@ -1,0 +1,24 @@
+{
+    "info_faq": [
+        {
+            "main": "¿Por dónde empiezo?",
+            "desc": "Comienza siempre por los principios básicos, todo lo complejo se sustentará siempre de esto. Así que entre más claros los tengas, más facil te será aprender temas nuevos "
+        },
+        {
+            "main": "¿Cuál rama de la Ciencia es la mejor?",
+            "desc": "Ninguna es mejor que otra, cada una se enfoca en cosas distintas. Tu solo sabrás cual es tu fuerte, hasta que las explores, por lo que te recomendamos navegar por varias si estás algo perdido"
+        },
+        {
+            "main": "¿Cuáles libros recomiendan? ",
+            "desc": "Tenemos un apartado de libros, estos están acomodados en orden de dificultad"
+        },
+        {
+            "main": "¿Es necesario ser bueno en matemáticas?",
+            "desc": "Para conocer las bases generales y solo introducirte en alguna rama, no lo son. Pero intuimos que eso no es lo que buscas, así que si. Si quieres entender por completo tu rama de la ciencia debes ser bueno en matemáticas"
+        },
+        {
+            "main": "Solo con los recursos proporcionados, ¿Lograré ser un buen científico?",
+            "desc": "No. Imap pretende ser una ayuda en tu camino inicial como autodidacta, pero el resto te tocará a ti. buscando más foros, mas libros, sacando conclusiones y haciendo mas preguntas sobre lo que aprendas "
+        }
+    ]
+}

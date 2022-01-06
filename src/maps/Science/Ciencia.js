@@ -2,6 +2,8 @@
 import React from 'react';
 import '../Maps.css'
 import info_table from './info_table.json'
+import info_tabbed_content from './info_tabbed_content.json'
+import imagen from './science_images/top_science_1.webp'
 
 //React-bootstrap
 import Table from 'react-bootstrap/Table'
@@ -11,6 +13,7 @@ import Tab from 'react-bootstrap/Tab'
 import ListGroup from 'react-bootstrap/ListGroup'
 import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { ListGroupItem } from 'react-bootstrap';
 
 function Ciencia() {
     return (
@@ -32,11 +35,11 @@ function Title() {
     )
 }
 
-function TableColumnGeneratorChannels(props) {
+function TableColumnGenerator(props) {
     return (
         <td>
             <span class="table_content_title">
-                {props.chanel_title + " - "}
+                {props.title + " - "}
             </span>
 
             {props.description}
@@ -59,79 +62,32 @@ function TableColumnGeneratorChannels(props) {
 const Table_channel_content =
     info_table.info_channels.map(
         (json) =>
-            <TableColumnGeneratorChannels
-                chanel_title={json.chanel_title}
+            <TableColumnGenerator
+                title={json.title}
                 description={json.description}
                 link={json.link}
             />
     )
-
-function TableColumnGeneratorCommunities(props) {
-    return (
-        <td>
-            <span class="table_content_title">
-                {props.community_title + " - "}
-            </span>
-            {props.description}
-            <br />
-            <span class="btn_table">
-                <Button
-                    variant="outline-dark"
-                    target='blank'
-                    href={props.link}
-                >
-                    <span class="content_title">
-                        Navegar
-                    </span>
-                </Button>
-            </span>
-        </td>
-    )
-}
 
 const Table_community_content =
-    info_table.info_communities.map(
+    info_table.info_communities_accounts.map(
         (json) =>
-            <TableColumnGeneratorCommunities
-                community_title={json.comunity_title}
+            <TableColumnGenerator
+                title={json.title}
                 description={json.description}
                 link={json.link}
             />
     )
-
-function TableColumnGeneratorPlatforms(props) {
-    return (
-        <td>
-            <span class="table_content_title">
-                {props.platform_title + " - "}
-            </span>
-            {props.description}
-            <br />
-            <span class="btn_table">
-                <Button
-                    variant="outline-dark"
-                    target='blank'
-                    href={props.link}
-                >
-                    <span class="content_title">
-                        Navegar
-                    </span>
-                </Button>
-            </span>
-        </td>
-    )
-}
 
 const Table_platform_content =
-    info_table.info_platforms.map(
+    info_table.info_platforms_websites.map(
         (json) =>
-            <TableColumnGeneratorPlatforms
-                platform_title={json.platform_title}
+            <TableColumnGenerator
+                title={json.title}
                 description={json.description}
                 link={json.link}
             />
     )
-
 
 let Table_channel_content_length = Object.keys(Table_channel_content)
 Table_channel_content_length = Table_channel_content_length.length
@@ -221,24 +177,54 @@ function ContentTable() {
     )
 }
 
-
 function TabContentGenerator(props) {
     return (
-        <p class="tabbed_content">
-            <ListGroup>
-                <ListGroup.Item>
-                    <p class="tabbed_background">
-                        <Container>
-                            <span>
-                                {props.content_arg}
-                            </span>
-                        </Container>
-                    </p>
-                </ListGroup.Item>
-            </ListGroup>
-        </p>
+        <ListGroup>
+            <ListGroup.Item>
+                <p class="tabbed_background">
+                    <Container>
+                        <span class="faq_question">
+                            {props.main}
+                        </span>
+                        <p class="tabbed_content">
+                            {props.desc}
+                        </p>
+                    </Container>
+                </p>
+            </ListGroup.Item>
+        </ListGroup>
     )
 }
+
+
+function TabContentVideosTopGenerator() {
+    //Tu mejor opcion aqui, son tarjetas <-
+    return (
+        <ListGroup>
+            <ListGroupItem>
+                <p class="tabbed_bakcground">
+                    <Container>
+                        <p class="tabbed_background tabbed_content_videos">
+                            <img src={imagen}>
+                            </img>
+                            <p class="tabbed_content">
+                                Esta ecuación cambiará tu modo de ver el mundo
+                            </p>
+                        </p>
+                    </Container>
+                </p>
+            </ListGroupItem >
+        </ListGroup >
+    )
+}
+
+let Tabbed_content_faq =
+    info_tabbed_content.info_faq.map(
+        (json) =>
+            <TabContentGenerator
+                main={json.main} desc={json.desc}
+            />
+    )
 
 function ContentTabbed() {
     return (
@@ -258,9 +244,9 @@ function ContentTabbed() {
                         </span>
                     }
                 >
-                    <TabContentGenerator
-                        content_arg=''
-                    />
+
+                    {Tabbed_content_faq}
+
                 </Tab>
 
                 <Tab
@@ -272,9 +258,9 @@ function ContentTabbed() {
                         </span>
                     }
                 >
-                    <TabContentGenerator
-                        content_arg='contenido'
-                    />
+
+                    <TabContentVideosTopGenerator />
+
                 </Tab>
 
                 <Tab
@@ -286,9 +272,11 @@ function ContentTabbed() {
                         </span>
                     }
                 >
+
                     <TabContentGenerator
                         content_arg='contenido'
                     />
+
                 </Tab>
 
                 <Tab

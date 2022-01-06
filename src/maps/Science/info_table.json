@@ -1,173 +1,183 @@
 {
     "info_channels": [
         {
-            "chanel_title": "Veritasium en español",
+            "title": "Veritasium en español",
             "description": "Un elemento de la verdad. Videos de Ciencia y Tecnología doblados al español \n",
             "link": "https://www.youtube.com/c/Veritasiumenespa%C3%B1ol/featured"
         },
         {
-            "chanel_title": "En Pocas Palabras ~ Kurzgesagt",
+            "title": "En Pocas Palabras ~ Kurzgesagt",
             "description": "Vídeos que explican las cosas con nihilismo optimista. Somos un equipo pequeño que quiere que la ciencia se vea hermosa. Porque es hermosa.",
             "link": "https://www.youtube.com/c/kurzgesagtES"
         },
         {
-            "chanel_title": "QuantumFracture",
+            "title": "QuantumFracture",
             "description": "¡Ciencia! ¡y con animaciones! El lado más loco (y real)' del Universo.",
             "link": "https://www.youtube.com/channel/UCbdSYaPD-lr1kW27UJuk8Pw"
         },
         {
-            "chanel_title": "CdeCiencia",
+            "title": "CdeCiencia",
             "description": "En CdeCiencia encontrarás vídeos tratando los temas más fascinantes de nuestro universo, y semanalmente un vídeo-resumen con las 8 noticias científicas más destacadas de la última semana.",
             "link": "https://www.youtube.com/c/CdeCiencia/featured"
         },
         {
-            "chanel_title": "El Robot de Platón ",
+            "title": "El Robot de Platón ",
             "description": "Preguntarte nunca dejar debes. Si el conocimiento es lo tuyo, date una vuelta. A veces hay helado. Canal de Ciencia, canal de Ciencias, canal de Sapiencias. La misión de esta página es difundir el conocimiento. El Robot representa la tecnología, presente y futuro, Platón representa el pasado y la filosofía, cosmología y en general la epistemología.",
             "link": "https://www.youtube.com/c/ElRobotdePlaton/featured"
         },
         {
-            "chanel_title": "Date Un Vlog",
+            "title": "Date Un Vlog",
             "description": "Encontrarás videos tratando sobre temas muy variados de ciencia. Todos contados de una forma muy enérgica e interesante. Entra y entederás mejor tu universo",
             "link": "https://www.youtube.com/c/DateunVlog/featured"
         },
         {
-            "chanel_title": "CuriosaMente",
+            "title": "CuriosaMente",
             "description": "Ciencia y cultura, por el placer de aprender. Una invitación para las mentes curiosas a despertar el sentido de la maravilla que sólo el conocimiento puede dar.",
             "link": "https://www.youtube.com/curiosamente"
         },
         {
-            "chanel_title": "Antroporama",
+            "title": "Antroporama",
             "description": "Esto es Antroporama, es decir, divulgación científica sobre el Ser Humano, nuestra conducta, mente y nuestro secreto mejor guardado: el cerebro. ¡Quédate si te encanta conocer lo curiosa que puede ser nuestra especie!",
             "link": "https://www.youtube.com/channel/UCGKzjVZGdJ0YmUqg42xfO5w"
         },
         {
-            "chanel_title": "CienciaDeSofa",
+            "title": "CienciaDeSofa",
             "description": "Divulgación científica para mentes distraídas, ¡ahora también en vídeo! ",
             "link": "https://www.youtube.com/user/CienciaDeSofa/featured"
         },
         {
-            "chanel_title": "La Hiperactina",
+            "title": "La Hiperactina",
             "description": "¡Divulgación, biomedicina y muchas cosas bonitas!",
             "link": "https://www.youtube.com/c/Lahiperactina/featured"
         },
         {
-            "chanel_title": "GlóbuloAzul",
+            "title": "GlóbuloAzul",
             "description": "Por fin información de salud de la que te puedes fiar. Aquí es más importante el rigor que el número de suscriptores. ",
             "link": "https://www.youtube.com/c/Gl%C3%B3buloAzul/featured"
         },
         {
-            "chanel_title": "TeHasPreguntado",
+            "title": "TeHasPreguntado",
             "description": "NeuroCiencia y hechos sorprendentes que seguro te has preguntado alguna vez. En este canal te explicamos de manera sencilla y divertida como funciona nuestro cerebro, el comportamiento, cuestiones filosóficas y ciencia en general, que aunque no lo creas son parte de tu vida diaria.",
             "link": "https://www.youtube.com/c/tehaspreguntado/featured"
         },
         {
-            "chanel_title": "Date un Voltio",
+            "title": "Date un Voltio",
             "description": "Si tienes una mente curiosa, eres un friki de The Big Bang Theory o quieres aprender Física y resolver tus dudas sobre esta materia, ¡este es tu canal! ",
             "link": "https://www.youtube.com/c/DateunVoltio"
         },
         {
-            "chanel_title": "Instituto de Física Teórica IFT",
+            "title": "Instituto de Física Teórica IFT",
             "description": "Es nuestra misión acelerar el aprendizaje de estudiantes de todas las edades. Con esto en mente, queremos compartir nuestro contenido con todos aquellos que lo puedan encontrar útil. ",
             "link": "https://www.youtube.com/c/IFTMadrid/featured"
         },
         {
-            "chanel_title": "KhanAcademyEspañol",
+            "title": "KhanAcademyEspañol",
             "description": "¡Explicamos nuestros campos de investigación de forma amena y accesible!'",
             "link": "https://www.youtube.com/c/KhanAcademyEspanol/featured"
         },
         {
-            "chanel_title": "Amigos de la Química",
+            "title": "Amigos de la Química",
             "description": "Un canal de quimica, todo explicado de una forma muy clara, divertida y concisa",
             "link": "https://www.youtube.com/c/AmigosdelaQu%C3%ADmicaMartaVitores/featured"
         },
         {
-            "chanel_title": "Reacciona Explota",
+            "title": "Reacciona Explota",
             "description":"¡Ven a descubrir a química como nunca la habías visto! En este canal de divulgación de ciencia aprenderás qué es y como funciona la pólvora, qué pasa si metes la mano en nitrógeno líquido o cómo hacer luz líquida. El lado más alucinante de la Química, aquí.",
             "link": "https://www.youtube.com/c/reaccionaexplota/featured"
         },
         {
-            "chanel_title": "Sabine Hossenfelder",
+            "title": "Sabine Hossenfelder",
             "description": "In her channel Science without the gobbledygook, Sabine talks straight about science: No hype, no spin, no tip-toeing around inconvenient truths. New video each Saturday. ",
             "link": "https://www.youtube.com/c/SabineHossenfelder/featured"
         },
         {
-            "chanel_title": "Veritasium",
+            "title": "Veritasium",
             "description": "An element of truth - videos about science, education, and anything else I find interesting. ",
             "link": "https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA"
         },
         {
-            "chanel_title": "minutephysics",
+            "title": "minutephysics",
             "description": "Simply put: cool physics and other sweet science. ",
             "link": "https://www.youtube.com/c/minutephysics/featured"
         },
         {
-            "chanel_title": "DoS - Domain of Science",
+            "title": "DoS - Domain of Science",
             "description": "Welcome to the Domain of Science. A full channel of a lot of things about science and technology ",
             "link": "https://www.youtube.com/c/DomainofScience/featured"
         }
     ],
-    "info_communities": [
+    "info_communities_accounts": [
         {
-            "comunity_title": "Reddit Science",
+            "title": "Reddit Science",
             "description": "This community is a place to share and discuss new scientific research. Read about the latest advances in astronomy, biology, medicine, and more. ",
             "link": "https://www.reddit.com/r/science/"
         },
         {
-            "comunity_title": "Everything Science",
+            "title": "Everything Science",
             "description": "EverythingScience is the sister subreddit to /r/science. With a broader rule set than /r/science, it is the place for high quality scientific content that doesn't necessarily reference a peer-reviewed paper from the last 6 months.",
             "link": "https://www.reddit.com/r/EverythingScience/"
         },
         {
-            "comunity_title": "Ciencia",
+            "title": "Ciencia",
             "description": "Datos y noticias interesantes sobre ciencia",
             "link": "https://www.facebook.com/groups/1754504511501734"
         },
         {
-            "comunity_title": "Universal-Sci",
+            "title": "Universal-Sci",
             "description": "Providing you with Interesting news stories about worldwide scientific endeavors - As an Amazon Associate we earn from qualifying purchases. ",
             "link": "https://twitter.com/universal_sci"
         },
         {
-            "comunity_title": "Quanta Magazine",
+            "title": "Quanta Magazine",
             "description": "Big ideas in science and math. ",
             "link": "https://twitter.com/QuantaMagazine"
         },
         {
-            "comunity_title": "mikephy",
+            "title": "mikephy",
             "description": "Ciencia con lenguaje cotidiano, entendible & divertido",
             "link": "https://www.tiktok.com/@mikephy"
+        },
+        {
+            "title": "doctorfision",
+            "description": "Ciencia, tecnología y curiosidades",
+            "link": "https://www.tiktok.com/@doctorfision"
         }
     ],
-    "info_platforms": [
+    "info_platforms_websites": [
         {
-            "platform_title": "Khan Academy",
+            "title": "Khan Academy",
             "description": "Somos una organización sin fines de lucro con la misión de ofrecer educación gratuita de primer nivel, para cualquier persona en cualquier lugar.",
             "link": "https://es.khanacademy.org/"
         },
         {
-            "platform_title": "Brilliant",
+            "title": "Brilliant",
             "description": "Brilliant replaces lecture videos with hands-on, interactive problem solving. It's a better (and more fun) way to learn",
             "link": "https://brilliant.org/"
         },
         {
-            "platform_title": "Muy interesante",
+            "title": "Muy interesante",
             "description": "Revista mensual de divulgación y ciencia popular",
             "link": "https://www.muyinteresante.es/"
         },
         {
-            "platform_title": "Conversus",
+            "title": "Conversus",
             "description": "Conversus, donde la ciencia se convierte en cultura, es un concepto multiplataforma de divulgación de la ciencia, la tecnología y la innovación",
             "link": "https://www.ipn.mx/ddicyt/cultivate/revista-conversus.html"
         },
         {
-            "platform_title": "RDU",
+            "title": "RDU",
             "description": "La Revista Digital Universitaria (RDU) es una publicación electrónica bimestral de comunicación social de la ciencia, dirigida a la comunidad universitaria y al público interesado. Su principal objetivo es comunicar temas relacionados con el desarrollo de las ciencias, las humanidades, las artes y la tecnología",
             "link": "https://www.revista.unam.mx/"
         },
         {
-            "platform_title": "Pys Org",
+            "title": "Pys Org",
             "description": "A very full scientific magazine",
             "link": "https://phys.org/page2.html"
+        },
+        {
+            "title": "Scielo ",
+            "description": "La Scientific Electronic Library Online - SciELO Perú es una biblioteca virtual que abarca una colección seleccionada de revistas científicas.",
+            "link": "https://scielo.org/es"
         }
-    ]
+    ]   
 }

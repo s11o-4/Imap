@@ -49,11 +49,21 @@
   font-size: larger;
 }
 
+.faq_question{
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+  font-size: large;
+}
+
 .tabbed_content{
   font-family: 'Ubuntu', sans-serif;
-  font-size: larger;
-  
-  background-color: #F2F3F4;
+  padding-left: 1vw;
+  font-size: large;
+}
+
+.tabbed_content_videos{
+  padding-left: 27vw;
+  padding-right: 24vw;
 }
 
 .tabbed_background{
