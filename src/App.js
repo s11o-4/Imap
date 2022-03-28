@@ -22,7 +22,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 //Images
-import light_logo from './images/logo_light_theme_2.png'
+import dark_logo from './images/logo_dark_theme_3.png'
 import ciencia_logo from './images/ciencia.png'
 import inge_tecno_logo from './images/ingenieria.png'
 import art_logo from './images/arte.png'
@@ -40,6 +40,7 @@ function App() {
                 <NavbarGenerator />
                 <TitleDescription />
                 <MapsClass />
+                <Footer />
               </div>
             }
           />
@@ -61,13 +62,13 @@ function App() {
 function NavbarGenerator() {
   return (
     <div id='navbar'>
-      <Navbar bg="light" expand="sm" fixed="top">
+      <Navbar className="navbar" expand="sm" fixed="top">
         <Container>
           <Navbar.Brand href="/">
             <img
               alt="Logo"
-              src={light_logo}
-              width="90"
+              src={dark_logo}
+              width="100"
               height="55"
             />
             <span className="text-start" id='title_navbar'>
@@ -88,7 +89,7 @@ function TitleDescription() {
       </h1>
       <Container>
         <p id='leyend' className="text-center">
-          "Un mapa para todo aquel valiente que quiera empezar a
+          "Un mapa para todo aquel valiente que quiera comenzar a
           ser autodidacta en este enorme océano llamado Internet."
         </p>
       </Container>
@@ -99,28 +100,31 @@ function TitleDescription() {
 function Map(props) {
   let navigate = useNavigate();
   return (
-    <Card border="dark">
-      <Card.Img
-        class="map_img"
-        alt={props.title}
-        variant="top"
-        src={props.img_scr}
-      />
-      <Card.Body>
-        <Card.Title id='title_map'>
-          {props.title}
-        </Card.Title>
-        <Button
-          variant="outline-dark"
-          onClick={() => {
-            navigate(props.id)
-          }}>
-          <span class="content_title">
-            Ver mapa
-          </span>
-        </Button>
-      </Card.Body>
-    </Card>
+    <div class="card">
+      <Card border="dark">
+        <Card.Img
+          class="map_img"
+          alt={props.title}
+          variant="top"
+          src={props.img_scr}
+        />
+        <Card.Body>
+          <Card.Title id='title_map'>
+            {props.title}
+          </Card.Title>
+          <Button
+            variant="outline-dark"
+            onClick={() => {
+              navigate(props.id)
+            }}>
+            <span class="content_title">
+              Ver mapa
+            </span>
+          </Button>
+        </Card.Body>
+      </Card>
+
+    </div>
   )
 }
 
@@ -179,13 +183,40 @@ class MapsClass extends React.Component {
     )
   }
 }
-/* --Proximamente...
-function Footer(){
-  return(
-    <div>
-    
+function Footer() {
+  return (
+    <div class="footer">
+      <Container>
+        <div>
+          <Row className="row_navbar">
+            <Col>
+              <img
+                alt="Logo"
+                src={dark_logo}
+                width="100"
+                height="55"
+              />
+            </Col>
+            <Col>
+              <p>
+                Acerca de nosotros
+              </p>
+            </Col>
+            <Col>
+              <p>
+                Contactanos!
+              </p>
+            </Col>
+            <Col>
+              <p>
+                Copyright © 2022 - 2100
+              </p>
+            </Col>
+          </Row>
+        </div>
+      </Container>
     </div>
   )
 }
-*/
+
 export default App;

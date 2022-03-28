@@ -292,7 +292,7 @@ function ContentTabbed() {
                         content_arg='contenido'
                     />
                 </Tab>
-
+ 
             </Tabs>
         </Container>
     )

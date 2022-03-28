@@ -1,15 +1,20 @@
 .App{
-  background-color: #F2F3F4;
+  background-color: #FBFFFE;
 }
 
 #navbar{
   padding-bottom: 7vh;
 }
 
+.navbar{
+  background-color: #12100E;
+}
+
 #title_navbar{
   padding-left: 29vw;
   font-family: 'Fuzzy Bubbles', cursive;
   font-size: 35px;
+  color: whitesmoke;
   padding-top: 1vw;
 }
 
@@ -17,6 +22,7 @@
   margin-top: 7vh;
   font-size: 6rem;
   font-family: 'Fuzzy Bubbles', cursive;
+  color: #12100E;
 }
 
 #title_map{
@@ -27,11 +33,28 @@
 #leyend{
   font-family: 'Fira Sans', sans-serif;
   font-size: 1vw;
+  color: #12100E;
+  font-weight: 500;
 }
 
 .content_title{
   font-family: 'Roboto Mono', monospace;
   font-size: 1rem;
+}
+
+.card{
+  border-radius: 100px;
+  border: 100px;
+}
+
+.footer{
+  background-color: #12100E;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.row_navbar{
+  color: whitesmoke;
 }
 
 /* Media queries */
