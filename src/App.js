@@ -183,20 +183,21 @@ class MapsClass extends React.Component {
     )
   }
 }
+
 function Footer() {
   return (
     <div class="footer">
       <Container>
-        <div>
-          <Row className="row_navbar">
-            <Col>
-              <img
-                alt="Logo"
-                src={dark_logo}
-                width="100"
-                height="55"
-              />
-            </Col>
+        <Row className="row_navbar">
+          <span id="footer_img">
+            <img
+              alt="Logo"
+              src={dark_logo}
+              width="100"
+              height="55"
+            />
+          </span>
+          <span id="footer_content" class="d-flex justify-content-end">
             <Col>
               <p>
                 Acerca de nosotros
@@ -212,8 +213,8 @@ function Footer() {
                 Copyright © 2022 - 2100
               </p>
             </Col>
-          </Row>
-        </div>
+          </span>
+        </Row>
       </Container>
     </div>
   )

@@ -1,16 +1,16 @@
-.App{
+.App {
   background-color: #FBFFFE;
 }
 
-#navbar{
+#navbar {
   padding-bottom: 7vh;
 }
 
-.navbar{
-  background-color: #12100E;
+.navbar {
+  background-color: #100B00;
 }
 
-#title_navbar{
+#title_navbar {
   padding-left: 29vw;
   font-family: 'Fuzzy Bubbles', cursive;
   font-size: 35px;
@@ -18,87 +18,98 @@
   padding-top: 1vw;
 }
 
-#title{
+#title {
   margin-top: 7vh;
   font-size: 6rem;
   font-family: 'Fuzzy Bubbles', cursive;
   color: #12100E;
 }
 
-#title_map{
+#title_map {
   font-family: 'Fuzzy Bubbles', cursive;
   font-size: 2rem;
 }
 
-#leyend{
+#leyend {
   font-family: 'Fira Sans', sans-serif;
   font-size: 1vw;
   color: #12100E;
   font-weight: 500;
 }
 
-.content_title{
+.content_title {
   font-family: 'Roboto Mono', monospace;
   font-size: 1rem;
 }
 
-.card{
+.card {
   border-radius: 100px;
   border: 100px;
 }
 
-.footer{
-  background-color: #12100E;
+.footer {
+  background-color: #100B00;
+
+}
+
+#footer_img {
+  padding-top: 5vh;
+  padding-bottom: 3vh;
+  width: auto;
+}
+
+#footer_content {
+  width: auto;
   padding-top: 3vh;
   padding-bottom: 3vh;
 }
 
-.row_navbar{
+.row_navbar {
   color: whitesmoke;
 }
 
 /* Media queries */
-@media screen 
-  and (max-width: 774px)
-  {
-    #leyend{
-      font-size: 4vw;
-    }  
-    .cards{
-      padding-top: 5vh;
-     }
-    .map_img{
-      height: 300px;
-    }
-} 
-@media screen
- and (min-width: 770px)
- and (max-width: 1644px)
- {
-    #leyend{
-      font-size: 2vw;
-    }  
-   .cards{
+@media screen and (max-width: 774px) {
+  #leyend {
+    font-size: 4vw;
+  }
+
+  .cards {
+    padding-top: 5vh;
+  }
+
+  .map_img {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1644px) {
+  #leyend {
+    font-size: 2vw;
+  }
+
+  .cards {
     padding-top: 5vh;
     margin-left: 16vw;
     margin-right: 16vw;
-   }
-   .map_img{
+  }
+
+  .map_img {
     height: 350px;
   }
 }
-@media screen
- and (min-width: 1645px)
- {  
-   .cards{
-     padding-top: 5vh;
-     margin-left: 20vw;
-     margin-right: 20vw;
-   }
-   .map_img{
-     padding-right: 3vw;
-     padding-left: 3vw;
-     width: 470px;
-     height: 350px;
-   }
- }
+
+@media screen and (min-width: 1645px) {
+  .cards {
+    padding-top: 5vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
+  .map_img {
+    padding-right: 3vw;
+    padding-left: 3vw;
+    width: 470px;
+    height: 350px;
+  }
+}
